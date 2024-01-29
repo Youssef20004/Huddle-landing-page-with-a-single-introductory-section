@@ -1,0 +1,226 @@
+*, html{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    
+}
+html{scroll-behavior: smooth;}
+body{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400 , 700 ;
+    background: white;
+    overflow-x: hidden;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    background: hsl(322, 100%, 66%);
+    width: 100%;
+    max-width: 250px;
+    display: inline-block;  /*عشان يخلى الزرار فى النصف*/
+    border-radius: 20px;
+    height: 40px;
+    font-weight: 800;
+}
+button:hover{
+    opacity: 0.7;
+    transition: 0.2s ease-in;
+} 
+li{list-style: none;}
+a{color: hsl(193, 100%, 96%);}
+
+
+.header{
+    background: #f0ffff no-repeat;  /*ازرق سماوى*/
+    background-image: url(./images/bg-hero-mobile.svg);
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+.header .img-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .img-button button{box-shadow: 0 2px 10px hsla(220, 7%, 9%, 0.1);}
+.header .button-link button{color: white;}
+.header .button-header{
+    background: white;
+    border-radius: 20px;
+    height: 25px;
+    width: 100px;
+
+}
+.header .mockups img{
+    width: 100%;
+    min-width: 250px;
+    padding-top: 20px;
+}
+
+/* ============section=========== */
+
+section{
+    padding-top: 90px;
+}
+section .container img{
+    /* width: 100%; */
+    max-width: 600px;
+}
+section .container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+section .container .card-1,
+section .container .card-2,
+section .container .card-3{
+    background: white;
+    box-shadow: 0 2px 10px hsla(220, 7%, 9%, 0.1);
+    border-radius: 9px;
+    text-align: center;
+}
+section .container .card-1 .text1,
+section .container .card-3 .text3
+{
+    width: 540px;
+    margin-left: 60px;
+}
+section .container .card-2 .text2{width: 540px; margin-right: 50px;}
+section .container .card-1 .text1 p,
+section .container .card-2 .text2 p,
+section .container .card-3 .text3 p{color:rgb(197, 195, 195);}
+/* ================card-top-footer================= */
+
+.card-top-footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 2px 10px hsla(220, 7%, 9%, 0.1);
+    width: 50%;
+    min-width: 220px;
+    height: 150px;
+    border-radius: 9px;
+    position: relative;
+    top: 150px;
+    z-index: 20;
+}
+.card-top-footer button{
+    width: 100%;
+    max-width: 170px;
+    color: white;
+}
+.card-top-footer h1{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+
+/* =================footer============= */
+
+.mail-icon span {
+    font-size: 64px;
+}
+footer{
+    padding-top: 150px;
+    width: 100%;
+    min-height: 350px;
+    background: hsl(192, 100%, 9%) ;
+    border-radius: 9px;
+
+    cursor: pointer;
+}
+footer .container{
+    padding-top: 10px;
+}
+footer .container .logo,
+footer .container .loaction-icon,
+footer .container .phone-icon,
+footer .container .mail-icon{
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+footer .container .logo span{
+    color: hsl(322, 100%, 66%);
+    width: 30px;
+}
+footer .container .logo h1{
+    color: white;
+}
+footer i {
+    color: white;
+    font-size: 1.2rem;
+}
+footer .social-icons{
+    
+}
+footer .social-icons i{
+    padding-left: 20px; 
+}
+footer p {color: hsl(193, 100%, 96%);}
+footer .container p{
+    padding-left: 20px;
+}
+footer .container .navbar li{
+    padding-top: 20px;
+}
+/* MEDIA QUERIES */
+
+@media (min-width:1024px) {
+    section .container img{
+        width: 100%;
+    }
+
+    .header .container .header-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header .container .header-flex .text-prah{
+        width: 50%;
+        margin-left: 0;
+    }
+    section .container .card-1,
+    section .container .card-2,
+    section .container .card-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+    }
+    section .container .card-1,
+    section .container .card-3{
+        direction: rtl;
+        display: flex;
+        justify-content: space-around;
+    }    
+    section .container .card-1 .text1,
+    section .container .card-2 .text2,
+    section .container .card-3 .text3{
+        text-align: left;
+    }
+
+    footer .container .base{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer nav .All-li {
+        display: flex;
+    }
+    footer nav .All-li li{
+        padding-left: 80px;
+    }
+    footer .socail-All{
+        display: grid;
+        gap: 100px;
+    }
+}
